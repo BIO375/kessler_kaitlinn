@@ -27,7 +27,7 @@ x
 # Read in the data file
 data<-read_csv("datasets/demos/2019-09-02_class-data.csv",col_names = TRUE,
                col_types = cols(
-  name = col_character() )
+                 name = col_character() )
 )
 
 # Generate summary statistics for the object called "data" that consists of
@@ -51,7 +51,7 @@ ggplot(data)+
 # Note that you must have the column name EXACTLY correct.  Try, for example,
 # the following code
 ggplot(data)+
-  geom_histogram(aes(right arm), binwidth = 10)
+  geom_histogram(aes(right_arm), binwidth = 10)
 
 # Look at the help file for geom_boxpolot
 help("geom_boxplot")
@@ -71,20 +71,30 @@ ggplot(data)+
 # Dataset found at datasets/quinn/chpt2/lovett.csv
 # Enter your code below
 
-
+data2<-read_csv("datasets/quinn/chpt2/lovett.csv",col_names = TRUE,
+               col_types = cols(
+                 STREAM = col_character() )
+)
 
 # Calculate summary statistics for SO4 and SO4MOD
 # Enter your code below
-
+summary(data2)
 
 
 # Calculate standard deviation for SO4 and SO4MOD
 # Enter your code below
-
+summarise(data2, sd_ht = sd(SO4), sd_arm = sd(SO4MOD))
 
 
 # Plot histograms of SO4 and Modified SO4 with appropriate bin sizes
 # Enter your code below
+ggplot(data2)+
+  geom_histogram(aes(SO4), binwidth = 10)
+
+ggplot(data2)+
+  geom_histogram(aes(SO4MOD), binwidth = 5)
+
+
 
 
 
