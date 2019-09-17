@@ -13,6 +13,10 @@ tidyverse_update()
 # Read in data file
 ward_data<-read_csv("datasets/quinn/chpt3/ward.csv", col_names = TRUE)
 
+library(readr)
+ward <- read_csv("datasets/quinn/chpt3/ward.csv")
+View(ward)
+
 # Pasted from Import Dataset Tool
 # Note that for us, library(readr) is redundant because we loaded it with
 # all the other tidyverse packages earlier
