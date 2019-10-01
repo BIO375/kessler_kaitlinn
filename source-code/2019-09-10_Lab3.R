@@ -77,7 +77,7 @@ compensation<-mutate(compensation, log(Root))
 
 
 
-
+### MISSING R FOR DATA SCIENCE CODE #####
 
 
 
@@ -131,3 +131,4 @@ ggplot(ward)+
 # transformation
 # Enter your code here
 
+#### NOT COMPLETED BY DUE DATE ####
