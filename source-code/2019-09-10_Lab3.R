@@ -104,8 +104,18 @@ mpg
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy))
 
+<<<<<<< HEAD
+
+
+
+### MISSING R FOR DATA SCIENCE CODE #####
+
+
+
+=======
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy, color = class))
+>>>>>>> 9d8850de65bf79e29061b82f0fec3e0016213e1b
 
 # Compare the histograms and boxplots of EGGS and squareroot_eggs
 ggplot(ward) +
@@ -181,6 +191,9 @@ ggplot(sanchez_csv)+
 # transformation
 # Enter your code here
 
+<<<<<<< HEAD
+#### NOT COMPLETED BY DUE DATE ####
+=======
 ggplot(sanchez_csv)+
   geom_boxplot(aes(x = Bird_Colony, y = Beetle_Density), notch = TRUE, varwidth = TRUE)
 ggplot(sanchez_csv)+
@@ -195,3 +208,4 @@ col_double(Beetle_Density)
 
 data01 <- read_csv("datasets/abd/chapter12/chapter12e3HornedLizards.csv")
 data01 <- data01 %>% slice(-105)
+>>>>>>> 9d8850de65bf79e29061b82f0fec3e0016213e1b
