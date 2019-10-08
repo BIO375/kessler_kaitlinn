@@ -157,6 +157,8 @@ library(readr)
 elgar <- read_csv("datasets/quinn/chpt3/elgar.csv")
 View(elgar)
 
+## Plot code breaks b/c you need to put line 164 before line 162
+
 untidy_elgar <- mutate(untidy_elgar, diff = afterHORIZLIG - beforeHORIZDIM)
 
 untidy_elgar <- read_csv("datasets/quinn/chpt3/elgar.csv")
