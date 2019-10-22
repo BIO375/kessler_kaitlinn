@@ -22,7 +22,7 @@ library("summarytools")
 # For later plotting
 install.packages("Hmisc")
 library(Hmisc)
-
+yes
 ### Problem 12-18 ######
 eyespan <- read_csv("datasets/abd/chapter12/chap12q18StalkieEyespan.csv")
 
