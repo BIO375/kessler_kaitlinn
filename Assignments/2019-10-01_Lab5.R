@@ -176,9 +176,13 @@ library(readr)
 elgar <- read_csv("datasets/demos/elgar.csv")
 View(elgar)
 
+
 # Two-sided
-t.test(untidy_elgar$HORIZDIM, untidy_elgar$HORIZLIG, 
+t.test(feathers$typical, feathers$odd, 
        alternative = "two.sided", paired = TRUE, conf.level = 0.95)
+
+# Two-sided
+SignTest(feathers$diff, alternative = "two.sided", mu = 0, conf.level = 0.95)
 
 
 
