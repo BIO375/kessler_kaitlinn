@@ -19,7 +19,8 @@ library("nlme")
 library("tidyverse")
 # Check for updates
 tidyverse_update()
-
+install.packages("rlang")
+Yes
 ### General workflow ####
 
 # The general workflow as you do analyses in R should be as follows:
@@ -36,6 +37,11 @@ tidyverse_update()
 ### Step 1.  Read in and plot data ####
 
 # I have added a new folder with datafiles located at "datasets/r4all"
+
+library(readr)
+Daphnia <- read_csv("datasets/r4all/Daphniagrowth.csv")
+View(Daphnia)
+
 daphnia <-read_csv("datasets/r4all/Daphniagrowth.csv", col_types = cols(
   parasite = col_factor() ))
 
@@ -47,7 +53,6 @@ daphnia <- daphnia %>%
              Pansporella = "Pansporella perplexa",
              Pasteuria = "Pasteuria ramosa"
              ))
-
 # The research question here is two-fold: Q1: whether parasites alter host growth rates, 
 # Q2: whether each of the three parasites reduces growth, compared with a control, 
 # no parsite treatment.  The host is Daphnia, genus of water flea.
@@ -159,7 +164,6 @@ summary(tukey)
 # This is a very simple test output, it gives you a test statistic, df, and p
 
 kruskal.test(growth.rate ~ parasite, data = daphnia)
-summary(kruskal)
 
 ### Robust Welch's ANOVA ####
 
@@ -216,6 +220,11 @@ repeatability
 
 # End of story, 74% of walking stick femur length is due to variability among actual
 # insects, not picture analysis issues.
+
+
+
+
+
 
 
 
