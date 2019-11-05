@@ -13,7 +13,7 @@ tidyverse_update()
 # To perform sign tests, install and load the package DescTools
 install.packages("DescTools")
 library("DescTools")
-
+yes
 library(readr)
 X2019_10_01_Lab5 <- read_csv("datasets/demos/2019-10-01_Lab5.csv")
 View(X2019_10_01_Lab5)
@@ -176,13 +176,9 @@ library(readr)
 elgar <- read_csv("datasets/demos/elgar.csv")
 View(elgar)
 
-
 # Two-sided
-t.test(feathers$typical, feathers$odd, 
+t.test(untidy_elgar$HORIZDIM, untidy_elgar$HORIZLIG, 
        alternative = "two.sided", paired = TRUE, conf.level = 0.95)
-
-# Two-sided
-SignTest(feathers$diff, alternative = "two.sided", mu = 0, conf.level = 0.95)
 
 
 
