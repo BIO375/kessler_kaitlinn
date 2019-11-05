@@ -14,6 +14,8 @@ library("DescTools")
 
 library(readr)
 
+#### CODE BREAKS HERE BC YOU DID NOT PASTE read_csv() ####
+
 feathers <- mutate(feathers, diff = typical - odd)
 
 ggplot(feathers) +
@@ -79,6 +81,8 @@ ggplot(CO2_treatments)+
 # Two-sided
 t.test(growthrate ~ treatment, data = CO2_treatments, var.equal = TRUE, alternative = "two.sided", conf.level = 0.95)
 
+
+#### CODE BROKE ONE TIME, 5/6 PTS ####
 
 
 
