@@ -19,6 +19,7 @@ library("broom")
 library("tidyverse")
 # Check for updates
 tidyverse_update()
+install.packages(c("haven", "rvest"))
 
 ### Correlation ####
 
