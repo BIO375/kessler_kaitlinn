@@ -15,9 +15,15 @@ varWithin <- as.numeric( model02_varcomp[2,1] )
 repeatability <- varAmong / (varAmong + varWithin)
 repeatability
 
+
+
+
 library(readr)
 glucose <- read_csv("datasets/exams/glucose.csv")
 View(glucose)
+
+
+
 
 library(readr)
 DriverVision <- read_csv("datasets/exams/DriverVision.csv")
