@@ -33,4 +33,8 @@ ggplot(data01)+
 ggplot(data01)+
   geom_boxplot(aes(x = Survival, y = squamosalHornLength), notch = TRUE, varwidth = TRUE)
 
+# Typo lines 18 & 20: binwidth not bindwith
+# Line 23, x="" to indicate no x.
+# Missing variance ratio to test for equal variance
+# 7/10 pts #####
 
