@@ -86,6 +86,8 @@ repeatability
 # size of 25 walking-sticks insects, with each specimen measured twice. Both are randomly sampled,
 # and therefore both traits are equally affected by measurement error. 
 
+# HEAD WIDTH MORE EFFECTED BY MEASUREMENT ERROR BC LOWER REPEATIBILITY
+
 #### Problem 15-23 ####
 # Complete parts a and c only
 
@@ -242,6 +244,9 @@ kruskal.test(bodyTemperature ~ crabType, data = FiddlerCrab)
 
 
 
+# CODE BREAKS AT LINE 65 BECAUSE CAN'T DO A TUKEY TEST ON RANDOM FACTOR
+# CODE BREAKS AT LINE 133 BECAUSE NEED TO ASSIGN HABITAT AS FACTOR BEFORE DEFINING MODEL02
+### 24/26 PTS ####
 
 
 

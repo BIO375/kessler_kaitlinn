@@ -106,6 +106,8 @@ summary(model01)
 tukey <- glht(model01, linfct = mcp(group = "Tukey"))
 summary(tukey)
 
+# Line 106 should be planned comparisons not tukey HSD
+### 9/10 pts ####
 
 
 

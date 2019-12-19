@@ -292,4 +292,4 @@ t.test(paired_test_zebrafish$Spd_mutant, paired_test_zebrafish$Wild_type,
 # P<0.05, reject the null hypothesis
 # Paired t-test, two-sided, p-value = 0.0009, there is a significant diffence between the mean rate of aggressive activity in zebrafish that contained the spd mutation and the mean rate of aggressive activity for wild type zebrafish. 
 
-
+### 22/24 b/c 16b should not be paired t-test
